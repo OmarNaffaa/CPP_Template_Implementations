@@ -3,19 +3,19 @@
 
 int main()
 {
-	stlCopy::LinkedList<int> testIntList;
+    stlCopy::LinkedList<int> testIntList;
 
     std::cout << "[1] Adding Values.\n----> Expecting: 4 1 2 3 5" << std::endl;
-	testIntList.Insert(1, stlCopy::InsertLocation::Back);
-	testIntList.Insert(2, stlCopy::InsertLocation::Front);
-	testIntList.Insert(3, stlCopy::InsertLocation::Back);
-	testIntList.Insert(4, stlCopy::InsertLocation::Front);
-	testIntList.Insert(5, stlCopy::InsertLocation::Back);
+    testIntList.Insert(1, stlCopy::InsertLocation::Back);
+    testIntList.Insert(2, stlCopy::InsertLocation::Front);
+    testIntList.Insert(3, stlCopy::InsertLocation::Back);
+    testIntList.Insert(4, stlCopy::InsertLocation::Front);
+    testIntList.Insert(5, stlCopy::InsertLocation::Back);
     std::cout << "----> Result:    "; testIntList.Display(); 
 
     std::cout << "[2] Erasing value = 1\n";
     std::cout << "----> Expecting: 4 2 3 5" << std::endl;
-	testIntList.EraseValue(1);
+    testIntList.EraseValue(1);
     std::cout << "----> Result:    "; testIntList.Display(); 
 
     std::cout << "[3] Erasing value = 4\n";

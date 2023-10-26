@@ -8,8 +8,8 @@ class Node
 {
 public:
     T data;
-	Node* nextNode;
-	Node(T value);
+    Node* nextNode;
+    Node(T value);
 };
 
 }
