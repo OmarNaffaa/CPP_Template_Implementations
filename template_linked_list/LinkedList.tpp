@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+namespace stlCopy {
+
 template <typename T>
 LinkedList<T>::LinkedList()
 {
@@ -97,3 +99,5 @@ void LinkedList<T>::Display()
 	}
 	std::cout << std::endl;
 }
+
+} // namespace stlCopy

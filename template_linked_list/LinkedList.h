@@ -5,6 +5,8 @@
 
 #include "Node.h"
 
+namespace stlCopy {
+
 enum class InsertLocation {
 	Front,
 	Back
@@ -14,8 +16,8 @@ template <typename T>
 class LinkedList
 {
 private:
-	Node<T>* headNode;
-	Node<T>* tailNode;
+	stlCopy::Node<T>* headNode;
+	stlCopy::Node<T>* tailNode;
 	int listSize;
 
 public:
@@ -54,6 +56,8 @@ public:
 	 */
 	void Display();
 };
+
+} // namespace stlCopy
 
 #include "LinkedList.tpp"
 
