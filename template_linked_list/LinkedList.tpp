@@ -97,4 +97,24 @@ void LinkedList<T>::Display()
     std::cout << std::endl;
 }
 
+template <typename T>
+LinkedList<T>::~LinkedList()
+{
+    Node<T> *tmp;
+
+    while (headNode) {
+        tmp = headNode;
+        headNode = headNode->nextNode;
+        delete tmp;
+        --listSize;
+    }
+
+    if (!listSize) {
+        std::cout << "[DEBUG] Mismatch between number of elements deleted "
+                  << "and size of elements tracked by listSize." << std::endl;
+        std::cout << "----------> listSize after deletions: " << listSize << ". "
+                  << "Expecting 0" << std::endl;
+    }
+}
+
 } // namespace stlCopy

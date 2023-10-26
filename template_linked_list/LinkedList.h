@@ -55,6 +55,12 @@ public:
      * 
      */
     void Display();
+
+    /**
+     * @brief Clean up Linked List object
+     * 
+     */
+    ~LinkedList();
 };
 
 } // namespace stlCopy
