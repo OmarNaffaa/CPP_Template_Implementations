@@ -88,9 +88,6 @@ void LinkedList<T>::EraseValue(T value)
 template <typename T>
 void LinkedList<T>::Display()
 {
-    // create an iterator node that starts at the
-    // first node by pointing at the same place
-    // as the head node
     Node<T> *iterator = headNode;
 
     for (int i = 0; i < listSize; i++) {
