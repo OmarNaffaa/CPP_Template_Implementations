@@ -109,7 +109,7 @@ LinkedList<T>::~LinkedList()
         --listSize;
     }
 
-    if (!listSize) {
+    if (listSize) {
         std::cout << "[DEBUG] Mismatch between number of elements deleted "
                   << "and size of elements tracked by listSize." << std::endl;
         std::cout << "----------> listSize after deletions: " << listSize << ". "
